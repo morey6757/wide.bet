@@ -1,12 +1,14 @@
 import { NgModule } from '@angular/core';
 import { SharedModule } from '../../shared/shared.module';
-
-
+import { RegisterComponent } from './register/register.component';
+import { RegisterRoutingModule } from './register-routing.module';
+import { RegisterFormComponent } from './register-form/register-form.component';
 
 @NgModule({
-  declarations: [],
+  declarations: [RegisterComponent, RegisterFormComponent],
   imports: [
-    SharedModule
+    SharedModule,
+    RegisterRoutingModule
   ]
 })
 export class RegisterModule { }

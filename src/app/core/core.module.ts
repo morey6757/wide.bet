@@ -4,6 +4,7 @@ import { PublicModule } from '../public/public.module';
 import { ProtectedModule } from '../protected/protected.module';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
 
 @NgModule({
   imports: [
@@ -11,8 +12,8 @@ import { FooterComponent } from './components/footer/footer.component';
     PublicModule,
     ProtectedModule
   ],
-  declarations: [NavbarComponent, FooterComponent],
-  exports: [NavbarComponent, FooterComponent]
+  declarations: [NavbarComponent, FooterComponent, PageNotFoundComponent],
+  exports: [NavbarComponent, FooterComponent, PageNotFoundComponent]
 })
 export class CoreModule {
   constructor(@Optional() @SkipSelf() parentModule: CoreModule) {

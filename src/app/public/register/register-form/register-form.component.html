@@ -1,0 +1,11 @@
+<form novalidate [formGroup]="registerForm" (ngSubmit)="submit()" class="card-body">
+    <!-- Le champ du nom de l‘utilisateur -->
+    <div class="form-group">
+        <label for="name">Name</label>
+        <input id="name" type="name" formControlName="name" class="form-control" placeholder="Votre peusdonyme"
+            autocorrect="off" autocomplete="off" />
+    </div>
+    <!-- A ajouter : le champ de l’adresse email. -->
+    <!-- A ajouter : le champ du mot de passe. -->
+    <!-- A ajouter : le bouton pour soumettre le formulaire. -->
+</form>
