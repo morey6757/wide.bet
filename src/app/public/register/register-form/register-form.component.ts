@@ -50,6 +50,5 @@ export class RegisterFormComponent implements OnInit {
         _ => this.router.navigate(['/app/dashboard']),
         _ => this.registerForm.reset()
       );
-    this.router.navigate(['/app/dashboard']);
   }
 }

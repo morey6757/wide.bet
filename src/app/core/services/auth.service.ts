@@ -110,6 +110,6 @@ export class AuthService {
 
   public autoLogin(user: User) {
     this.user.next(user);
-    this.router.navigate(['app/dashboard']);
+    this.router.navigate(['/app/dashboard']);
   }
 }
